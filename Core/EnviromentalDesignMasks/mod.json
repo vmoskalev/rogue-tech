@@ -1,0 +1,17 @@
+{
+  "Name": "EnvironmentalDesignMasks",
+  "Enabled": true,
+  "Hidden": true,
+  "Version": "0.1.0",
+  "Author": "BlueWinds",
+	"Website": "https://github.com/BlueWinds/EnvironmentalDesignMasks",
+  "DLL": "EnvironmentalDesignMasks.dll",
+  "DependsOn": [
+    "IRBTModUtils"
+  ],
+  "Manifest": [
+    { "Type": "CustomWeatherEffect", "Path": "customMoods" },
+    {"Type": "DesignMaskDef", "Path": "designmasks"},
+    {"Type": "SVGAsset", "Path": "icons"}
+  ]
+}

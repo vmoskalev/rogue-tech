@@ -1,0 +1,10 @@
+{
+  "ID": "EDM Arid Day Clear",
+  "FriendlyName": "Clear Day",
+  "baseMood": "AridDayClear",
+  "designMask": "DesignMaskAridDayClear",
+  "sunlight": {
+    "illuminance": 50000,
+    "colorTemperature": 3042
+  }
+}
