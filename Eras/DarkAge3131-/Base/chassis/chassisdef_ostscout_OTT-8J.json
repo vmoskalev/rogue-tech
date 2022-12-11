@@ -1,0 +1,232 @@
+{
+  "Custom": {
+    "DropCostFactor": {
+      "DropModifier": 1.05
+    },
+    "AssemblyVariant": {
+      "PrefabID": "Ostscout",
+      "Exclude": false,
+      "Include": true
+    },
+    "ChassisDefaults": []
+  },
+  "CustomParts": {
+    "CustomParts": []
+  },
+  "FixedEquipment": [
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "Special_Improved_Sensors",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    }
+  ],
+  "Description": {
+    "Cost": 726373,
+    "Rarity": 3,
+    "Purchasable": true,
+    "Manufacturer": "",
+    "Model": "",
+    "UIName": "Ostscout",
+    "Id": "chassisdef_ostscout_OTT-8J",
+    "Name": "Ostscout",
+    "Details": "The Ostscout was designed as a pure recon BattleMech by Ostmann Industries. To that end, it was built entirely around gathering data and getting out of trouble, tasks for which it is exceptional; the Ostscout is quick enough to escape most traps, and very few other designs can match it in terms of speed and maneuverability. The Ostscout 8J is highly prized by the Draconis Combine, using the classic 7J model as a base, it uses a GM 280-rated XL engine to free up weight to upgrade its electronics suite to modern standards, being fitted with an Angel ECM suite and Bloodhound active probe. Offensively the Medium Laser is swapped for a Martell-X medium X-Pulse laser supported by double heat sinks and six tons of ferro-fibrous armor.\n\n<b><color=#e62e00>Quirk: Improved Sensors</color></b>\n\n<b><color=#e62e00>Drop Cost Multiplier: 1.05</color></b>",
+    "Icon": "Ostscout"
+  },
+  "VariantName": "OTT-8J",
+  "ChassisTags": {
+    "items": [
+      "mr-resize-0.8"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "StockRole": "Scout",
+  "YangsThoughts": "This 'Mech is quick as hell, but the Ostscout would be hard-pressed to win a fight against all but the lightest of opposition.",
+  "MovementCapDefID": "movedef_lightmech",
+  "PathingCapDefID": "pathingdef_light",
+  "HardpointDataDefID": "hardpointdatadef_vossieostscout",
+  "PrefabIdentifier": "chrprfmech_vossieostscoutbase-001",
+  "PrefabBase": "vossieostscout",
+  "Tonnage": 35,
+  "InitialTonnage": 3.5,
+  "weightClass": "LIGHT",
+  "BattleValue": 3087000,
+  "Heatsinks": 0,
+  "TopSpeed": 129,
+  "TurnRadius": 90,
+  "MaxJumpjets": 20,
+  "Stability": 100,
+  "StabilityDefenses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "SpotterDistanceMultiplier": 1,
+  "VisibilityMultiplier": 1,
+  "SensorRangeMultiplier": 1,
+  "Signature": 1,
+  "Radius": 8,
+  "PunchesWithLeftArm": false,
+  "MeleeDamage": 18,
+  "MeleeInstability": 9,
+  "MeleeToHitModifier": 0,
+  "DFADamage": 35,
+  "DFAToHitModifier": 0,
+  "DFASelfDamage": 35,
+  "DFAInstability": 18,
+  "MechPartMax": 0,
+  "MechPartCount": 0,
+  "EngageRangeModifier": 0,
+  "Locations": [
+    {
+      "Location": "Head",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 6,
+      "MaxArmor": 45,
+      "MaxRearArmor": -1,
+      "InternalStructure": 16
+    },
+    {
+      "Location": "LeftArm",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 60,
+      "MaxRearArmor": -1,
+      "InternalStructure": 30
+    },
+    {
+      "Location": "LeftTorso",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 80,
+      "MaxRearArmor": 40,
+      "InternalStructure": 40
+    },
+    {
+      "Location": "CenterTorso",
+      "Hardpoints": [
+        {
+          "WeaponMountID": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "AntiPersonnel",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "Special",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        },
+        {
+          "WeaponMountID": "SpecialMelee",
+          "Omni": false
+        }
+      ],
+      "Tonnage": 0,
+      "InventorySlots": 15,
+      "MaxArmor": 110,
+      "MaxRearArmor": 55,
+      "InternalStructure": 55
+    },
+    {
+      "Location": "RightTorso",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 80,
+      "MaxRearArmor": 40,
+      "InternalStructure": 40
+    },
+    {
+      "Location": "RightArm",
+      "Hardpoints": [
+        {
+          "WeaponMountID": "AntiPersonnel",
+          "Omni": false
+        }
+      ],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 60,
+      "MaxRearArmor": -1,
+      "InternalStructure": 30
+    },
+    {
+      "Location": "LeftLeg",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 6,
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "InternalStructure": 40
+    },
+    {
+      "Location": "RightLeg",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 6,
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "InternalStructure": 40
+    }
+  ],
+  "LOSSourcePositions": [
+    {
+      "x": 0,
+      "y": 15,
+      "z": 0
+    },
+    {
+      "x": 3.5,
+      "y": 13,
+      "z": 0
+    },
+    {
+      "x": -3.5,
+      "y": 13,
+      "z": 0
+    }
+  ],
+  "LOSTargetPositions": [
+    {
+      "x": 0,
+      "y": 15,
+      "z": 0
+    },
+    {
+      "x": 3.5,
+      "y": 13,
+      "z": 0
+    },
+    {
+      "x": -3.5,
+      "y": 13,
+      "z": 0
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "z": 0
+    },
+    {
+      "x": -3,
+      "y": 5,
+      "z": 0
+    }
+  ]
+}

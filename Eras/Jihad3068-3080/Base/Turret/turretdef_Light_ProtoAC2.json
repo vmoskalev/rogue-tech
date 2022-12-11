@@ -1,0 +1,105 @@
+{
+  "Description": {
+    "Id": "turretdef_Light_ProtoAC2",
+    "Name": "Light PAC/2 Turret",
+    "Details": "A basic weapon emplacement providing rudimentary defenses.\n\n<color=#ff0000>Quirk: Stable Weapons</color>\n\n<color=#ffcc00><b>Armor:</b> Armor <b>Amount:</b> 160\n<b>Structure:</b> Structure <b>Amount:</b> 100\n\n\n<b>Engine:</b> 100 Standard Fusion\n\n<b>Equipment:</b>\n  1 x Command Bunker\n\n\n<b>Weapons:</b>\n  2x Proto AC/2 (C)\n\n\n<b>Ammunition:</b>\n  1x Ammo Proto AC/2\n",
+    "Icon": "",
+    "Cost": 993,
+    "Rarity": 0,
+    "Purchasable": false
+  },
+  "ChassisID": "turretchassisdef_Light_ProtoAC2",
+  "TurretTags": {
+    "items": [
+      "unit_aaa",
+      "unit_turret",
+      "unit_light",
+      "clanburrock",
+      "clanbloodspirit",
+      "clancloudcobra",
+      "clancoyote",
+      "clandiamondshark",
+      "clanfiremandrill",
+      "clanghostbear",
+      "clangoliathscorpion",
+      "clanhellshorses",
+      "clanjadefalcon",
+      "clannovacat",
+      "clanstaradder",
+      "clansteelviper",
+      "clansnowraven",
+      "GhostBearDominion",
+      "RavenAlliance",
+      "ClanStoneLion",
+      "clanwolf",
+      "EscorpionImperio",
+      "ClanWolfInExile",
+      "mr-resize-0.75"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "CurrentArmor": 160,
+  "CurrentInternalStructure": 100,
+  "AssignedArmor": 160,
+  "DamageLevel": "Functional",
+  "inventory": [
+    {
+      "ComponentDefID": "Weapon_Autocannon_ProtoAC2_CLAN",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_Autocannon_ProtoAC2_CLAN",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Ammo_AmmunitionBox_Generic_ProtoAC2",
+      "ComponentDefType": "AmmunitionBox",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Gear_Engine_100",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Turret_Coolant_System",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "emod_engineslots_std_center",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Tank_CrewBunker_Light",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Turret_Systems_Light",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Special_Stable_Weapons",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    }
+  ]
+}
