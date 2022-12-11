@@ -1,0 +1,2205 @@
+<?xml version="1.0" ?>
+<RogueTechConfig>
+	<LancherUpdateUrl>https://discourse.modsinexile.com/t/rogue-tech/134</LancherUpdateUrl>
+	<RequiredBattleTechVersion>1.9.1</RequiredBattleTechVersion>
+	<RequiredLauncherVersion>1.3.4</RequiredLauncherVersion>
+	<SecureHash>FowWQRaHFsoWthbGFtIW9BacFvkWShYHFpAW5BYZFuc=</SecureHash>
+	<showCoreItems>false</showCoreItems>
+	<Tasks>
+		<InstallTask>
+			<Id>coreInstall</Id>
+			<canSelect>false</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>RtConfig.xml,.git,.gitignore,.modtek,.vscode,Documents,InstallOptions,Optional,Eras,RogueTechPerfFix</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId/>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription/>
+			<uiName>RogueTech Core</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>coreEra</Id>
+			<canSelect>false</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId/>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>Eras/ClanInvasion3061</sourcePath>
+			<targetPath>Eras/ClanInvasion3061</targetPath>
+			<uiDescription/>
+			<uiName>Clan Invasion Era</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>OnlineMode</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>MultiComponentInstall</jobType>
+			<optionGroupId>OnlineMode</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Warning! Launch Safeties cannot be disabled in online mode to ensure a level playing field for all players;;Yes, I understand;;No thanks</promptText>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/PersistentMapClient</sourcePath>
+			<targetPath>PersistentMapClient</targetPath>
+			<uiDescription>Fight for your choosen faction against other players for supremacy over the Inner Sphere (Requires registering and application on Warmap Discord for full access, visit www.roguewar.org to find out how )</uiDescription>
+			<uiName>Online War Map (Requires registering and application on Warmap Discord for full access)</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>WIICMode</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>OnlineMode</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/WarTechIIC</sourcePath>
+			<targetPath>WarTechIIC</targetPath>
+			<uiDescription>Offline Mode with Interactive Inner Sphere</uiDescription>
+			<uiName>Wartech IIC</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Year3040</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>NoOp</jobType>
+			<optionGroupId>MapYear</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription>Map is based on the Canon 3040 state of the InnerSphere</uiDescription>
+			<uiName>3040's Map</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Year3081</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>MapYear</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/ISM3081</sourcePath>
+			<targetPath>Options/ISM3081</targetPath>
+			<uiDescription>Map is based on the Canon 3081-3086 state of the InnerSphere</uiDescription>
+			<uiName>3080's Map</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>GlobalDifficultyByCompany</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.05</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>GlobaldDifficulty</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/GlobalDifficulty/GlobalDifficultyByCompany/settings.json</sourcePath>
+			<targetPath>Core/DropCostsEnhanced/settings.json</targetPath>
+			<uiDescription>Base difficulty goes up the more money your mechs are worth. 14,000,000 cbills per half-skull. It counts the your averaged deployment value for the last several missions. +5% Online Progress.</uiDescription>
+			<uiName>Difficulty by Company Strength - Challenge scales with the cost of your drops</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>GlobalDifficultyByPlanets</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>GlobaldDifficulty</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/GlobalDifficulty/GlobalDifficultyByPlanets/settings.json</sourcePath>
+			<targetPath>Core/DropCostsEnhanced/settings.json</targetPath>
+			<uiDescription>Every Planet has their own Difficulty Rating Some systems are difficult, some are easy.</uiDescription>
+			<uiName>Difficulty by Planet Rating - Planets never change their Skulls. </uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>GlobalDifficultyByLegacyCompany</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>1</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>GlobaldDifficulty</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/GlobalDifficulty/GlobalDifficultyByLegacyCompany/settings.json</sourcePath>
+			<targetPath>Core/DropCostsEnhanced/settings.json</targetPath>
+			<uiDescription>Base difficulty goes up the more money your mechs are worth. 16,500,000 cbills per half-skull. It counts the most expensive mechs you can drop. Caps Online influence to 10 max.</uiDescription>
+			<uiName>Difficulty by Company Strength (Legacy) - Challenge scales with the cost of your mechs</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SupportDefault</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>SupportLances</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/SupportLances/MC-Default/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>Default Enemy Support Lances</uiDescription>
+			<uiName>Default Enemy Support Lances</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SupportKillTeams</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>SupportLances</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Only the cheesiest and most unfair Murderbabies are to be found here. Hasta la vista, baby!\n\nAre you sure you want to enable?;;Spank Me;;I'll pass</promptText>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/SupportLances/MC-KillTeams</sourcePath>
+			<targetPath>Core/MissionControl</targetPath>
+			<uiDescription>Max 1 Support Lance, Deadly Custom Mechs and High Level Pilots begin appearing at D13</uiDescription>
+			<uiName>KillTeams Enemy Support Lance</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>EasyMode</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>-0.5</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>1</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>SupportLances</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/SupportLances/MC-Easy</sourcePath>
+			<targetPath>Core/MissionControl</targetPath>
+			<uiDescription>Max 1 Support Lance, Lower chances, -50% Online Progress, Caps Online influence to 10 max</uiDescription>
+			<uiName>Easy Enemy Support Lances</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>HugsMode</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>-0.5</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>2</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>SupportLances</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/SupportLances/MC-Hugs</sourcePath>
+			<targetPath>Core/MissionControl</targetPath>
+			<uiDescription>No Enemy Support Lances (except contract specific), -90% Online Progress, Caps Online influence to 6 max</uiDescription>
+			<uiName>No Enemy Support Lances</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RandomSpawning</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>MapSpawnRandomizer</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MapSpawnRandomizer/MC-Randomizer/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>Randomizes Combat Starting Position.</uiDescription>
+			<uiName>Random Combat Starting Position</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>NoRandomSpawning</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>-0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>MapSpawnRandomizer</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MapSpawnRandomizer/MC-NoRandomizer/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>Disabled Random Combat Starting Position. -2% Online Progress.</uiDescription>
+			<uiName>Disable Random Combat Starting Position</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ManualDeploy</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>-0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>DeployChoice</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Deployment/CU-DeployManual/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Choose a Deployment Position on Mission Start. -2% Online Progress.</uiDescription>
+			<uiName>Manual Deploy</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>AskDeploy</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>-0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>DeployChoice</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Deployment/CU-DeployAsk/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Ask for Deploy type before combat. -2% Online Progress.</uiDescription>
+			<uiName>Ask for Deploy type before combat</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>AutoDeploy</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>DeployChoice</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Deployment/CU-DeployAutomatic/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Your Units are automatically deployed.</uiDescription>
+			<uiName>Automatic Deploy</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ManualConvoy</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>ConvoyControl</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Convoy/CU-ConvoyManual/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Manually control Convoy Missions</uiDescription>
+			<uiName>Manual Convoy</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>AutoConvoy</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>ConvoyControl</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Convoy/CU-ConvoyAI/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Ai controls Convoy Missions.</uiDescription>
+			<uiName>AI Convoy</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>AlliesActive</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>AlliesToggle</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Allies/MC-Allies/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>Receive Allied Support on Tougher Contracts.</uiDescription>
+			<uiName>Enable Allies</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>AlliesDisabled</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>AlliesToggle</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Warning! Enemies will vastly outnumber you?;;Yes, Hurt me!;;No Way</promptText>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Allies/MC-NoAllies/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>DO NOT! Receive Allied Support on Tougher Contracts.</uiDescription>
+			<uiName>Disable Allies</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>MapSelectStd</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>MapSize</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MapSize/MC-Mapsize-STD/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>Standard Map Size.</uiDescription>
+			<uiName>Standard Map Size</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>MapSelect33</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.05</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>MapSize</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MapSize/MC-Mapsize-33/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>33% Increased Map Size. +5% Online Progress.</uiDescription>
+			<uiName>33% Increased Map Size</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>MapSelect66</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.1</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>MapSize</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MapSize/MC-Mapsize-66/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>66% Increased Map Size. +10% Online Progress.</uiDescription>
+			<uiName>66% Increased Map Size</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>MapSelect100</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.1</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>MapSize</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MapSize/MC-Mapsize-100/settings.json</sourcePath>
+			<targetPath>Core/MissionControl/settings.json</targetPath>
+			<uiDescription>100% Increased Map Size. +10% Online Progress. Can cause long mission load on some maps.</uiDescription>
+			<uiName>100% Increased Map Size</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CombatLogOff</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>CombatLog</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/CombatLog/CombatLogOff/mod.json</sourcePath>
+			<targetPath>Core/IRTweaks/mod.json</targetPath>
+			<uiDescription>Damage and status effects as floaties around the mech, no Combat Log</uiDescription>
+			<uiName>Floaties</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CombatLogOn</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>CombatLog</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/CombatLog/CombatLogOn/mod.json</sourcePath>
+			<targetPath>Core/IRTweaks/mod.json</targetPath>
+			<uiDescription>Converts all Floaties to persistent Combat Log in the upper right corner</uiDescription>
+			<uiName>Combat Log</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>PilotsRonin</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>Pilotselect</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Pilots/PilotsRonin/pilotselectsettings.json</sourcePath>
+			<targetPath>Core/MechAffinity/pilotselectsettings.json</targetPath>
+			<uiDescription>Start the Game with pre-defined Pilots. They have painted pictures and unused EXP</uiDescription>
+			<uiName>Random Ronin Starting Pilots</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>PilotsProcedural</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>Pilotselect</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Pilots/PilotsProcedural/pilotselectsettings.json</sourcePath>
+			<targetPath>Core/MechAffinity/pilotselectsettings.json</targetPath>
+			<uiDescription>Start the Game with randomly generated, editable, Pilots. Ones like you commonly find in the hiring hall. +1% Online Progress.</uiDescription>
+			<uiName>Random Generated Starting Pilots</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ConcreteJungle</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>ConcreteJungle</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Challenging Content! Urban Biomes will be rough.\n\nAre you sure you want to enable?;;BASEMENT DEMOLISHERS WOOO!!;;No</promptText>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/ConcreteJungle</sourcePath>
+			<targetPath>Options/ConcreteJungle</targetPath>
+			<uiDescription>Urban Biomes my includes ambushes, traps and destroyed environment. +2% Online Progress.</uiDescription>
+			<uiName>Change Urban Biomes to wartorn Nightmares</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueCivilWar</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechEra</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Eras/CivilWar3062-3067</sourcePath>
+			<targetPath>Eras/CivilWar3062-3067</targetPath>
+			<uiDescription>Civil War Era, Lore Units</uiDescription>
+			<uiName>Mech's of the Civil War Era 3062-3067</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueJihad</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechEra</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Eras/Jihad3068-3080</sourcePath>
+			<targetPath>Eras/Jihad3068-3080</targetPath>
+			<uiDescription>Jihad Era, Lore Units</uiDescription>
+			<uiName>Mech's of the WoB Jihad Era 3068-3080</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueRepublic</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechEra</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Eras/Republic3081-3130</sourcePath>
+			<targetPath>Eras/Republic3081-3130</targetPath>
+			<uiDescription>Republic Era, Lore Units</uiDescription>
+			<uiName>Mech's of the Republic Era 3080-3130</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueDarkAge</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechEra</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Eras/DarkAge3131-</sourcePath>
+			<targetPath>Eras/DarkAge3131-</targetPath>
+			<uiDescription>Dark Age Era, Lore Units</uiDescription>
+			<uiName>Mech's of the Dark Age Era 3130+</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Urbocalypse</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Urbocalypse</sourcePath>
+			<targetPath>Optionals/Urbocalypse</targetPath>
+			<uiDescription>UrbanMechs, UrbanMech's everyhwere! +1% Online Progress.</uiDescription>
+			<uiName>Urbocalypse - Trashcans Galore!</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueOmnis</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/RogueOmnis</sourcePath>
+			<targetPath>Optionals/RogueOmnis</targetPath>
+			<uiDescription>!Challenging Content! High End Upgrades of classic Mech's. +2% Online Progress.</uiDescription>
+			<uiName>Custom OmniMechs - Plug and Play Galore</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>PirateTech</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/PirateTech</sourcePath>
+			<targetPath>Optionals/PirateTech</targetPath>
+			<uiDescription>!Challenging Content! Jury Rigged and Junker Tech Units. +2% Online Progress.</uiDescription>
+			<uiName>Pirate Tech Units - Laws are to be Broken!</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueModuleElites</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Challenging Content! This Includes extremely powerful random Encounters.\n\nAre you sure you want to enable?;;Yes, Send the Munchkins!;;No</promptText>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/RogueElites</sourcePath>
+			<targetPath>Optionals/RogueElites</targetPath>
+			<uiDescription>!Extremely Challenging Content! Customs and Pilots that push the Limits of whats Possible. +2% Online Progress.</uiDescription>
+			<uiName>Elite Pilots and Mechs - Lances and Contracts to face Superior Skilled Forces.</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RISCtechmodule</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Challenging Content! This Includes extremely powerful random Encounters.\n\nAre you sure you want to enable?;;Let's RISC it!;;No</promptText>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/RISCtech</sourcePath>
+			<targetPath>Optionals/RISCtech</targetPath>
+			<uiDescription>!Challenging Content! Post Dark Age Technology Unit's and Combined Arm's Lances. +1% Online Progress.</uiDescription>
+			<uiName>Republic Institute of Strategic Combat - Black Ops R&amp;D</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueSociety</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>This content is not canonical.\n\nAre you sure you want to enable?;;Yes, Science Rules!;;No, Science Dumb.</promptText>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/RogueSociety</sourcePath>
+			<targetPath>Optionals/RogueSociety</targetPath>
+			<uiDescription>Unleash the desperate technologies and prototypes of the Society as they try to topple the Warrior Caste during the Wars of Reaving. +1% Online Progress.</uiDescription>
+			<uiName>The Rogue Society</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Superheavys</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Challenging Content! These Behemoths will walk over you if unprepared.\n\nAre you sure you want to enable?;;Yes, Stompys!;;No</promptText>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Superheavys</sourcePath>
+			<targetPath>Optionals/Superheavys</targetPath>
+			<uiDescription>!Challenging Content! End Game Content: Challenge Units above 100 Ton's, the Leviathans of the Modern Battlefield. +1% Online Progress.</uiDescription>
+			<uiName>Superheavys - Oversized Mechs&amp;Tanks and their Missions by LadyAlekto&amp;CargoVroom</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>UrbieNuke</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Warning! Everyone will have access to Nuclear Weapons.\n\nAre you sure you want to enable?;;Yes, Nuke me from Orbit!;;No Way</promptText>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/NuclearWeapons</sourcePath>
+			<targetPath>Optionals/NuclearWeapons</targetPath>
+			<uiDescription>!Very Challenging Content! Nuclear Weapons, they are what they say they are! DO EXPECT TO BE WIPED INSTANTLY!</uiDescription>
+			<uiName>Nuclear Weapon Carriers - The RT Team</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ExperimentalWeapons</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Challenging Content! These Prototypes will mince you up.\n\nAre you sure you want to enable?;;Yes, Bring it!;;No</promptText>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/ExperimentalWeapons</sourcePath>
+			<targetPath>Optionals/ExperimentalWeapons</targetPath>
+			<uiDescription>!Challenging Content! Prototypes and Experimental Technologys. +2% Online Progress.</uiDescription>
+			<uiName>Experimental Weapons - by MXMach and Harkonnen </uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Quicsell</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.02</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Quicsell</sourcePath>
+			<targetPath>Optionals/Quicsell</targetPath>
+			<uiDescription>A Selection of Knockoff Components and Equipment. +2% Online Progress.</uiDescription>
+			<uiName>QuicSell - Bestest Value Prices! - by PlateGlassArmor</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Quicksell Customs</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/QuicksellCustoms</sourcePath>
+			<targetPath>Optionals/QuicksellCustoms</targetPath>
+			<uiDescription>A collection of goofy custom mechs using QuicSell equipment. Requires QuicSell module.</uiDescription>
+			<uiName>QuicSell Custom Mechs - by Kagorus</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>KrakenGoodTime</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/KrakenGoodTime</sourcePath>
+			<targetPath>Optionals/KrakenGoodTime</targetPath>
+			<uiDescription>Pilots related event chain based on Squid Game. +1% Online Progress.</uiDescription>
+			<uiName>Kraken Good Time - by Dark Khaos</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Operation Revival</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueTechOptionals</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Adds new Clan toys. Be prepared for a challenge!\n\nAre you sure you want to enable?;;Yes, Hit me!;;No</promptText>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/OperationRevival</sourcePath>
+			<targetPath>Optionals/OperationRevival</targetPath>
+			<uiDescription>Units from the Operation Revival fan TRO series. Used with original authors permission. +1% Online Progress.</uiDescription>
+			<uiName>Operation Revival - by Raza5 and sharlin</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueFlashPointModuleStoryline</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueFlashpoints</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Flashpoints/RogueFlashPointModuleStoryline</sourcePath>
+			<targetPath>Flashpoints/RogueFlashPointModuleStoryline</targetPath>
+			<uiDescription>Story line of the Arano Restoration, as told by Duncan Fisher over some Drinks</uiDescription>
+			<uiName>Arano Restoration Story as Flashpoint - by Akodoreign</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>LV426</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueFlashpoints</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Flashpoints/LV426</sourcePath>
+			<targetPath>Flashpoints/LV426</targetPath>
+			<uiDescription>!Very Challenging Content! Explore a uninhabited Asteroid and recover the Black Marauder</uiDescription>
+			<uiName>LV-426 Flashpoint&amp;Units - The RT Team</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>TheDronesOfSyberia</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueFlashpoints</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Flashpoints/TheDronesOfSyberia</sourcePath>
+			<targetPath>Flashpoints/The Drones Of Syberia</targetPath>
+			<uiDescription>Based on the Nebula California Sourcebook, series of Flashpoints</uiDescription>
+			<uiName>Drones of Syberia- Barely Canon FP - by Akodoreign</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Heretek</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueFlashpoints</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Flashpoints/Heretek</sourcePath>
+			<targetPath>Flashpoints/Heretek</targetPath>
+			<uiDescription>A misjump brings unexpected guests</uiDescription>
+			<uiName>Heretek - Very much Not-Canon - by AkodoReign and LadyAlekto </uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SuperHeavyFlashpoints</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueFlashpoints</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Flashpoints/Superheavys</sourcePath>
+			<targetPath>Flashpoints/Superheavys</targetPath>
+			<uiDescription>Flashpoints bringing the Heaviest Metal - Requires Flashpoint and Superheavy Module</uiDescription>
+			<uiName>Superheavy Flashpoints - by AkodoReign</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>FP_FightingGhosts</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueFlashpoints</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Flashpoints/FightingGhosts</sourcePath>
+			<targetPath>Flashpoints/FightingGhosts</targetPath>
+			<uiDescription> Flashpoints Series created by Ablomis.</uiDescription>
+			<uiName>Legends Series - by Ablomis </uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>TukayyidRT</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>RogueFlashpoints</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>Optionals/Flashpoints/Tukayyid</sourcePath>
+			<targetPath>Flashpoints/Tukayyid</targetPath>
+			<uiDescription> Tukayyid Flashpoint created by Ablomis.</uiDescription>
+			<uiName>Battle of Tukayyid - by Ablomis </uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>BTAPilots</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>PilotMods</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>InstallOptions/Pilots/BT_Advanced_Pilots</sourcePath>
+			<targetPath>Options/Pilots/BT_Advanced_Pilots</targetPath>
+			<uiDescription>Pilots that can be Hired based on the Modding Community</uiDescription>
+			<uiName>Pilots of the Modding Communty - The BTA Team</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>JarnfolkPilots</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>PilotMods</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>InstallOptions/Pilots/JarnfolkPilots</sourcePath>
+			<targetPath>Options/Pilots/JarnfolkPilots</targetPath>
+			<uiDescription>Pilots that can be Hired based on the Jarnfolk</uiDescription>
+			<uiName>Jarnfolk Pilots - Werecat101</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>OmegaSquad</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>PilotMods</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>InstallOptions/Pilots/OmegaSquadPilots</sourcePath>
+			<targetPath>Options/Pilots/OmegaSquadPilots</targetPath>
+			<uiDescription>Pilots that can be Hired by Maleister with their Emblems</uiDescription>
+			<uiName>Omega Squad Pilots - by Maleister</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>MandalorianPilots</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>MultiComponentInstall</jobType>
+			<optionGroupId>PilotMods</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>InstallOptions/Pilots/MandalorianPilots, InstallOptions/Pilots/CPL-Portraits-Mandalorian</sourcePath>
+			<targetPath>Options/Pilots/MandalorianPilots, Core/CommanderPortraitLoader</targetPath>
+			<uiDescription>Pilots that can be Hired based on Mandalorians with their Emblems and Commander Portraits</uiDescription>
+			<uiName>Mandalorian Pilots&amp;Emblems&amp;Portraits - by DarkKhaos</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RtoLegends</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>PilotMods</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>true</saveBreaking>
+			<sourcePath>InstallOptions/Pilots/RtoLegends</sourcePath>
+			<targetPath>Options/Pilots/RtoLegends</targetPath>
+			<uiDescription>Pilots based on well-known RTO players from the past and present</uiDescription>
+			<uiName>Roguetech Online Movers &amp; Shakers - Jamie Wolf &amp; DarkKhaos</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/RogueEmblems</sourcePath>
+			<targetPath>Options/Emblems/RogueEmblems</targetPath>
+			<uiDescription>Company Emblem Pack of the RogueTech Crew</uiDescription>
+			<uiName>RogueTech Emblems</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RaelMEmblem</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/RaelM</sourcePath>
+			<targetPath>Options/Emblems/RaelM</targetPath>
+			<uiDescription>Company Emblem Pack by RaelM</uiDescription>
+			<uiName>RaelM Emblems</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>merc3025Emblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/All3025Mercs</sourcePath>
+			<targetPath>Options/Emblems/All3025Mercs</targetPath>
+			<uiDescription>Company Emblem Pack containing 3025 Merc Unit icons</uiDescription>
+			<uiName>3025 Mercenary Emblems</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CapellanEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/Capellan</sourcePath>
+			<targetPath>Options/Emblems/Capellan</targetPath>
+			<uiDescription>Company Emblem Pack containing Conferdator Capella Unit icons</uiDescription>
+			<uiName>Capellan Emblems</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>WobEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/WordOfBlake</sourcePath>
+			<targetPath>Options/Emblems/WordOfBlake</targetPath>
+			<uiDescription>Company Emblem Pack containing Word of Blake Unit icons</uiDescription>
+			<uiName>Word of Blake Emblems</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ClanEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/Clan</sourcePath>
+			<targetPath>Options/Emblems/Clan</targetPath>
+			<uiDescription>Company Emblem Pack containing Clan Unit icons</uiDescription>
+			<uiName>Clan Emblems</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>EnovaEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/Enova</sourcePath>
+			<targetPath>Options/Emblems/Enova</targetPath>
+			<uiDescription>Company Emblem Pack by ENOVA</uiDescription>
+			<uiName>ENOVA's Emblems</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>NROLEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/NROL</sourcePath>
+			<targetPath>Options/Emblems/NROL</targetPath>
+			<uiDescription>Company Emblem Pack containing NROL icons</uiDescription>
+			<uiName>NROL Emblems by Mellowseven</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>WarhammerEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/Warhammer</sourcePath>
+			<targetPath>Options/Emblems/Warhammer</targetPath>
+			<uiDescription>Company Emblem Pack containing Warhammer icons</uiDescription>
+			<uiName>Warhammer Emblems by Mellowseven</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>HistoricPirateFlags</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/HistoricPirateFlags</sourcePath>
+			<targetPath>Options/Emblems/HistoricPirateFlags</targetPath>
+			<uiDescription>Company Emblem Pack containing Historic Prate Flag icons</uiDescription>
+			<uiName>Historic Pirate Flags Emblems by peteg1013</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CutesyEmblems</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Emblems</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Emblems/Cutesy</sourcePath>
+			<targetPath>Options/Emblems/Cutesy</targetPath>
+			<uiDescription>A bunch of Pink and Cutesy Emblems</uiDescription>
+			<uiName>Cute Emblems by Wulfbane</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Screams</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>Screamey</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Screams/Screams/CustomAmmoCategoriesSettings.json</sourcePath>
+			<targetPath>Core/CustomAmmoCategories/CustomAmmoCategoriesSettings.json</targetPath>
+			<uiDescription>Civilians have not properly evacuated and may be stomped on in their Cars. War is a messy buisness.</uiDescription>
+			<uiName>Civilians didn't evacuate Cities</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ScreamsNo</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>Screamey</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Screams/ScreamsNo/CustomAmmoCategoriesSettings.json</sourcePath>
+			<targetPath>Core/CustomAmmoCategories/CustomAmmoCategoriesSettings.json</targetPath>
+			<uiDescription>Civilians have properly evacuated and disabled blood spatters and Screams</uiDescription>
+			<uiName>Civilians evacuated Cities</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>NewFire</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>FireFx</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Fire/FireNew/CustomAmmoCategoriesSettings.json</sourcePath>
+			<targetPath>Core/CustomAmmoCategories/CustomAmmoCategoriesSettings.json</targetPath>
+			<uiDescription>New Fire Fx with reduced smoke</uiDescription>
+			<uiName>Updated Fire Fx</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>OldFire</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>FireFx</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Fire/FireOld/CustomAmmoCategoriesSettings.json</sourcePath>
+			<targetPath>Core/CustomAmmoCategories/CustomAmmoCategoriesSettings.json</targetPath>
+			<uiDescription>Old Fire Fx with towering smoke plumes.</uiDescription>
+			<uiName>Original Fire Fx</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>NightVisionOn</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>NVOverlay</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/NightVision/LowVisNightVisionOn/mod.json</sourcePath>
+			<targetPath>Core/LowVisibility/mod.json</targetPath>
+			<uiDescription>Green tint Night Vision Overlay Enabled.</uiDescription>
+			<uiName>Enable Night Vision Overlay</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>NightVisionOff</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>NVOverlay</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/NightVision/LowVisNightVisionOff/mod.json</sourcePath>
+			<targetPath>Core/LowVisibility/mod.json</targetPath>
+			<uiDescription>Green tint Night Vision Overlay Disabled.</uiDescription>
+			<uiName>Disable Night Vision Overlay</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RedrawFogOfWarOn</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>FOWRedraw</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/FogOfWar/LowVisFOWRedraw/mod.json</sourcePath>
+			<targetPath>Core/LowVisibility/mod.json</targetPath>
+			<uiDescription>Redraw the Fog of War on Unit Activation.</uiDescription>
+			<uiName>Fog of War on a by Unit Basis</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RedrawFogOfWarOff</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>FOWRedraw</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/FogOfWar/LowVisFOWRedrawOff/mod.json</sourcePath>
+			<targetPath>Core/LowVisibility/mod.json</targetPath>
+			<uiDescription>Do not Redraw Fog of War per unit, Vision Distance is the Dashed Gold Line.</uiDescription>
+			<uiName>Fog Of War stays Revealed</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SpeedModNone</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>NoOp</jobType>
+			<optionGroupId>SpeedMod</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription>Vanilla Speed of all Actions</uiDescription>
+			<uiName>No Increased Speed</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SpeedModx25</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>MultiComponentInstall</jobType>
+			<optionGroupId>SpeedMod</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Speed/SpeedMod, InstallOptions/Speed/Speedx25</sourcePath>
+			<targetPath>Options/SpeedMod, Options/SpeedMod</targetPath>
+			<uiDescription>Speed of all Actions increased by 25%</uiDescription>
+			<uiName>Speed Mod  25% Increased Speed</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SpeedModx50</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>MultiComponentInstall</jobType>
+			<optionGroupId>SpeedMod</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Speed/SpeedMod, InstallOptions/Speed/Speedx50</sourcePath>
+			<targetPath>Options/SpeedMod, Options/SpeedMod</targetPath>
+			<uiDescription>Speed of all Actions increased by 50%</uiDescription>
+			<uiName>Speed Mod  50% Increased Speed</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SpeedModx75</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>MultiComponentInstall</jobType>
+			<optionGroupId>SpeedMod</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Speed/SpeedMod, InstallOptions/Speed/Speedx75</sourcePath>
+			<targetPath>Options/SpeedMod, Options/SpeedMod</targetPath>
+			<uiDescription>Speed of all Actions increased by 75%</uiDescription>
+			<uiName>Speed Mod  75% Increased Speed</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SpeedModx100</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>MultiComponentInstall</jobType>
+			<optionGroupId>SpeedMod</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Speed/SpeedMod, InstallOptions/Speed/Speedx100</sourcePath>
+			<targetPath>Options/SpeedMod, Options/SpeedMod</targetPath>
+			<uiDescription>Speed of all Actions increased by 100%</uiDescription>
+			<uiName>Speed Mod  100% Increased Speed</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>PanicFloatiesOn</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>RuLocFix</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Panic/Panic-FloatieTrue/mod.json</sourcePath>
+			<targetPath>Core/PanicSystem/mod.json</targetPath>
+			<uiDescription>Coloured Panic System Floaties. Disable for Russian Localisation.</uiDescription>
+			<uiName>Coloured Panic System Floaties</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>PanicFloatiesOff</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>RuLocFix</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Panic/Panic-FloatieFalse/mod.json</sourcePath>
+			<targetPath>Core/PanicSystem/mod.json</targetPath>
+			<uiDescription>Disable Coloured Panic System Floaties. Mostly for Russian Localisation.</uiDescription>
+			<uiName>No Coloured Panic System Floaties</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>skipintro</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>QOL</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/SkipIntro</sourcePath>
+			<targetPath>Options/SkipIntro</targetPath>
+			<uiDescription>Skips the Games Intro and Splash Screens</uiDescription>
+			<uiName>Skip Intro</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>BindableEscapeKey</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>QOL</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/BindableEscapeKey</sourcePath>
+			<targetPath>Options/BindableEscapeKey</targetPath>
+			<uiDescription>Bind's the ESC Key action to Mouse4</uiDescription>
+			<uiName>Use Mouse4 as ESC key</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>NoSorter</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>NoOp</jobType>
+			<optionGroupId>AutoSort</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription>No Automatic Sorting of Mechs</uiDescription>
+			<uiName>No Auto Sorting</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SortByCost</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>AutoSort</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MechSort/CU-SortByCbill/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Automatically Sort your Mechs by their cost from Highest to Lowest</uiDescription>
+			<uiName>Sort Mechs by Cost</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SortByTonnage</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>AutoSort</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MechSort/CU-SortByTonnage/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Automatically Sort your Mechs by their Tonnage from Highest to Lowest</uiDescription>
+			<uiName>Sort Mechs by Tonnage</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SortByName</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>BasicJsonMerge</jobType>
+			<optionGroupId>AutoSort</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MechSort/CU-SortByName/mod.json</sourcePath>
+			<targetPath>Core/CustomUnits/mod.json</targetPath>
+			<uiDescription>Automatically Sort your Mechs by their Name in Alphabetical Order</uiDescription>
+			<uiName>Sort Mechs by Name</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CommanderPortraitLoader</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>PortraitLoader</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/CommanderPortraits/CommanderPortraitLoader</sourcePath>
+			<targetPath>Core/CommanderPortraitLoader</targetPath>
+			<uiDescription>Allows you to select a Unique Portrait and Voice for your Commander during Creation</uiDescription>
+			<uiName>Commander Portrait Loader</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CPL-Portraits-Drawn</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>PortraitLoader</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/CommanderPortraits/CPL-Portraits-Drawn</sourcePath>
+			<targetPath>Core/CommanderPortraitLoader</targetPath>
+			<uiDescription>A selection of hand drawn Pilot Portraits</uiDescription>
+			<uiName>Drawn and Similar Styled CPL Portraits </uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CPL-Portraits-Crazy</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>PortraitLoader</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/CommanderPortraits/CPL-Portraits-Crazy</sourcePath>
+			<targetPath>Core/CommanderPortraitLoader</targetPath>
+			<uiDescription>A selection of more outlandish Pilot Portraits</uiDescription>
+			<uiName>Weird and Unique CPL Portraits </uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>RogueTechSounds</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>GFX</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/FX/RogueTechSounds</sourcePath>
+			<targetPath>Options/RogueTechSounds</targetPath>
+			<uiDescription>Replaces many Vanilla weapon sound effects with more Juicier and Beefier ones</uiDescription>
+			<uiName>Battletech Sound Replacement Pack by Zota6</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>SkipTravelCutscenes</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>GFX</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/FX/SkipTravelCutscenes</sourcePath>
+			<targetPath>Options/SkipTravelCutscenes</targetPath>
+			<uiDescription>Automatically skips Travelling Cutscenes when possible</uiDescription>
+			<uiName>Skip Travel cutscenes</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CrystalClearObsolete</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>GFX</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>Enabling this will likely have a performance impact! Only quite weak computers could see any real benefit.\n\nAre you sure you want to enable?;;Yes, VFX Bad!;;No, VFX Good!</promptText>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/FX/CrystalClear</sourcePath>
+			<targetPath>Options/CrystalClear</targetPath>
+			<uiDescription>Disables some Filters and Shaders that offer a cleaner visual Experience, but removes important visual cues during missions. Is known to cause performance issues on most decent systems, only use if you are really sure you want/need it.</uiDescription>
+			<uiName>Crystal Clear (Obsolete)</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Silence</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>GFX</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/FX/Silence</sourcePath>
+			<targetPath>Options/Silence</targetPath>
+			<uiDescription>Disable Argo Ambient Chatter</uiDescription>
+			<uiName>Silence - Disable most Ambient Chatter</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ScorchedEarth</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>GFX</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/FX/ScorchedEarth</sourcePath>
+			<targetPath>Options/ScorchedEarth</targetPath>
+			<uiDescription> Makes scorch marks permanent instead of fading in 40s</uiDescription>
+			<uiName>Scorched Earth - Permament Scorch Marks</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>MechPortraitsCrew</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>portraits</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MechPortraits/MechPortraitsCrew</sourcePath>
+			<targetPath>Core/RoguePortraits</targetPath>
+			<uiDescription>Colored and Unique Portraits for every Unit by Eternus</uiDescription>
+			<uiName>Default RogueTech Mech Portraits - by Eternus</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>MechPortraitsENOVA</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>portraits</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/MechPortraits/MechPortraitsENOVA</sourcePath>
+			<targetPath>Core/RoguePortraits</targetPath>
+			<uiDescription>Greyscale Picture of every Mech</uiDescription>
+			<uiName>Photography styled Mech Icons - by ENOVA</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ArmorRepair</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.01</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>repair</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/ArmorRepair/ArmorRepair</sourcePath>
+			<targetPath>Options/ArmorRepair</targetPath>
+			<uiDescription>Armor Damage persists after Battle and requires time and money to repair. But base tech points are boosted. The suggested game mode.</uiDescription>
+			<uiName>Repair Armor After Battle</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>ArmorPoints</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>-0.5</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>1</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>repair</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/ArmorRepair/ArmorPoints</sourcePath>
+			<targetPath>Options/ArmorPoints</targetPath>
+			<uiDescription>Armor Damage does not persist after Battle. Just like vanilla. But you have fewer base MechTech points. Training Wheels Mode.  -50% Online Progress, Caps Online influence to 10 max.</uiDescription>
+			<uiName>FREE Armor Repair After Battle - Lower base MechTech points</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>LocalizationRU</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Install</jobType>
+			<optionGroupId>Localizations</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>InstallOptions/Localization/CustomLocalization-RU</sourcePath>
+			<targetPath>Core/CustomLocalization</targetPath>
+			<uiDescription>Russian Localization</uiDescription>
+			<uiName>RU Localization</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>modtekInstall</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>BtRootInstall</jobType>
+			<optionGroupId>modtekSetup</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>ModTek/DoorStop, ModTek/sqlite3.dll</sourcePath>
+			<targetPath>., BattleTech_Data/Plugins/sqlite3.dll</targetPath>
+			<uiDescription>Install Modtek - REQUIRED Install</uiDescription>
+			<uiName>Install ModTek</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>Cleanup</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>Cleanup</jobType>
+			<optionGroupId>miscSelect</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription>Clears out the Cache and Settings - Suggested to clean up other Mods and other Issues</uiDescription>
+			<uiName>Clean the Cache</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>CleanSaves</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>CleanSaves</jobType>
+			<optionGroupId>miscSelect</optionGroupId>
+			<promptConfirmation>true</promptConfirmation>
+			<promptText>THIS WILL DELETE YOUR CAREER SAVES \n\nAre you sure you want to do this?;;Yes Delete;;No Cancel</promptText>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription>Remove Career and Skirmish and Game settings - Suggested to clean up other Mods</uiDescription>
+			<uiName>Remove old RT Saves</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>defaultRender</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>false</isSelected>
+			<jobType>DefaultBootConfig</jobType>
+			<optionGroupId>PerfOps</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription>Use the default rendering style for BattleTech</uiDescription>
+			<uiName>Default Rendering</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>mThreadRender</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>MThreadBootConfig</jobType>
+			<optionGroupId>PerfOps</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath/>
+			<targetPath/>
+			<uiDescription>Use multi-threaded rendering, may increase game performance</uiDescription>
+			<uiName>MultiThread Rendering</uiName>
+		</InstallTask>
+		<InstallTask>
+			<Id>perfixInstall</Id>
+			<canSelect>true</canSelect>
+			<difficultyModifier>0.0</difficultyModifier>
+			<excludePaths>log.txt</excludePaths>
+			<influenceMode>0</influenceMode>
+			<isSelected>true</isSelected>
+			<jobType>MultiComponentInstall</jobType>
+			<optionGroupId>RtPerfOp</optionGroupId>
+			<promptConfirmation>false</promptConfirmation>
+			<promptText/>
+			<saveBreaking>false</saveBreaking>
+			<sourcePath>RogueTechPerfFix, RogueTechPerfFix/Modtek</sourcePath>
+			<targetPath>RogueTechPerfFix, Modtek</targetPath>
+			<uiDescription>Performance fixes by Drowsy Corgi</uiDescription>
+			<uiName>RogueTech Perf Fixes</uiName>
+		</InstallTask>
+	</Tasks>
+	<Options>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Persistent Shared Online Map or Interactive Offline Experience</optionDescription>
+			<optionId>OnlineMode</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Online/Offline Mode</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect>Year3040</OnHideSelect>
+			<isHidden>true</isHidden>
+			<optionDescription>The year the offline map is based on</optionDescription>
+			<optionId>MapYear</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>WIIC Map Year</optionUiName>
+			<requiredOption>WIICMode</requiredOption>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Scale Global Difficulty to tailor experience to personal Taste</optionDescription>
+			<optionId>GlobaldDifficulty</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Choose difficulty scaling</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Enemy Support Lances</optionDescription>
+			<optionId>SupportLances</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Enemy Support Lances</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Spawn Randomizer</optionDescription>
+			<optionId>MapSpawnRandomizer</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Spawn Randomizer</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Battle Deployments</optionDescription>
+			<optionId>DeployChoice</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Battle Deployments</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Control Convoys</optionDescription>
+			<optionId>ConvoyControl</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Control Convoys</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Map Size</optionDescription>
+			<optionId>MapSize</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Choose the Map Size</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Allies Option</optionDescription>
+			<optionId>AlliesToggle</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Choose to Spawn Allies Support</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>CombatLog</optionDescription>
+			<optionId>CombatLog</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>CombatLog Toggle</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Pilot Randomizer</optionDescription>
+			<optionId>Pilotselect</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Pilot Randomizer</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Concrete Jungle</optionDescription>
+			<optionId>ConcreteJungle</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Concrete Jungle</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Additional Era's of Units to spawn</optionDescription>
+			<optionId>RogueTechEra</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Select which Era's Units to Enable - In addition to the base, pre-3062, units.</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>The more Outlandish and Crazy Units of RogueTech</optionDescription>
+			<optionId>RogueTechOptionals</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Optional Mods and Components - Many Non Canon</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Additional Flashpoints and Storys</optionDescription>
+			<optionId>RogueFlashpoints</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Additional Flashpoints and Storys  - Does not require Flashpoint DLC!</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Additional Pilot Mods</optionDescription>
+			<optionId>PilotMods</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Additional Hireable Ronin</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Various Emblem Packs by the Community</optionDescription>
+			<optionId>Emblems</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Emblem Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Commander Portrait Loader</optionDescription>
+			<optionId>PortraitLoader</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Portrait Loader Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Screaming Civilians</optionDescription>
+			<optionId>Screamey</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Evacuated Cities</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Burning Terrain</optionDescription>
+			<optionId>FireFx</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Fire FX</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>FogOfWar</optionDescription>
+			<optionId>FOWRedraw</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Fog Of War</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>NightVision</optionDescription>
+			<optionId>NVOverlay</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Night Vision Overlay</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Option to Speed Up Gameplay Actions</optionDescription>
+			<optionId>SpeedMod</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>SpeedMod Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Options that offer Quality of Life Improvements</optionDescription>
+			<optionId>QOL</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Quality of Life Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>AutoSorter For Mechs</optionDescription>
+			<optionId>AutoSort</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Mech Auto Sorting options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Graphical Effect Options</optionDescription>
+			<optionId>GFX</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>FX Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Panic System Coloured Floaties</optionDescription>
+			<optionId>RuLocFix</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>ColourFloaties</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Alternative Icons and Portraits for your Mech's</optionDescription>
+			<optionId>portraits</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Select Style of Alternative Portraits for Mechs</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Repair Options, for Immersive or Easy play</optionDescription>
+			<optionId>repair</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Tech and Repair Boni Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Locaizations (Do not install if playing in English)</optionDescription>
+			<optionId>Localizations</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Localizations</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription>Install ModTek</optionDescription>
+			<optionId>modtekSetup</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>ModTek</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription/>
+			<optionId>miscSelect</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>Misc. Tasks</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription/>
+			<optionId>PerfOps</optionId>
+			<optionType>ExclusiveOption</optionType>
+			<optionUiName>Rendering Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+		<InstallOption>
+			<OnHideSelect/>
+			<isHidden>false</isHidden>
+			<optionDescription/>
+			<optionId>RtPerfOp</optionId>
+			<optionType>MultiSelectOption</optionType>
+			<optionUiName>RT Pref Options</optionUiName>
+			<requiredOption/>
+		</InstallOption>
+	</Options>
+</RogueTechConfig>

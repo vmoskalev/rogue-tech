@@ -1,0 +1,204 @@
+{
+  "VehicleTags": {
+    "items": [
+      "mr-resize-1.27",
+      "unit_pirate",
+      "unit_vehicle",
+      "unit_light",
+      "unit_release",
+      "unit_lance_support",
+      "unit_indirectFire",
+      "unit_hover",
+      "unit_advanced",
+      "unit_bracket_low",
+      "locals",
+      "jarnfolk",
+      "delphi",
+      "hanse",
+      "castile",
+      "chainelane",
+      "tortuga",
+      "axumite",
+      "auriganpirates",
+      "marian",
+      "elysia",
+      "oberon",
+      "valkyrate",
+      "circinus",
+      "illyrian",
+      "lothian",
+      "flakjackals",
+      "localsbrockwayrefugees",
+      "solaris7"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "ChassisID": "vehiclechassisdef_HARASSER_MML_TWINS",
+  "Description": {
+    "Cost": 2527239,
+    "Rarity": 0,
+    "Purchasable": false,
+    "UIName": "Harasser 'Twins'",
+    "Id": "vehicledef_HARASSER_MML_TWINS",
+    "Name": "Harasser 'Twins'",
+    "Details": "This variant is equipped with a fuel cell-powered motor that allows it to move at a maximum speed of 150 km/h. It is also equipped with 3 turret-mounted MML-5s and 2 tons of ammunition. It is protected by 1.5 tons of Reflective Armor. It's used by two spoiled brat twin girls who have committed crimes across The Republic of the Sphere in 3081. The Harasser was extremely cheap to manufacture, and was produced in large numbers, as it was incorporated into the Galleon Light Tank units within the Free World League. Many variants have subsequently been produced.\n\n<b><color=#ffcc00>Fuel Cell: Improved vehicle engine that works in a Vacuum.</color></b>\n\n<b><color=#ffcc00>Movement: 12/18 Hex: 360/540 Meters.</color></b>\n\n<color=#ffcc00><b>Armor:</b> Ferro-Fibrous\n<b>Structure:</b> Structure\n<b>Values       A        S  </b>\n<b>Front</b>        75     15\n<b>Left</b>          40     15\n<b>Right</b>        40     15\n<b>Rear</b>         40     15\n<b>Turret</b>       45     15\n\n<b>Total</b>      240     75</color>\n\n<color=#ff0000>Quirk: Nimble</color>",
+    "Icon": "Harasser"
+  },
+  "Locations": [
+    {
+      "Location": "Front",
+      "CurrentArmor": 75,
+      "CurrentInternalStructure": 15,
+      "AssignedArmor": 75,
+      "DamageLevel": "Functional"
+    },
+    {
+      "Location": "Left",
+      "CurrentArmor": 40,
+      "CurrentInternalStructure": 15,
+      "AssignedArmor": 40,
+      "DamageLevel": "Functional"
+    },
+    {
+      "Location": "Right",
+      "CurrentArmor": 40,
+      "CurrentInternalStructure": 15,
+      "AssignedArmor": 40,
+      "DamageLevel": "Functional"
+    },
+    {
+      "Location": "Rear",
+      "CurrentArmor": 40,
+      "CurrentInternalStructure": 15,
+      "AssignedArmor": 40,
+      "DamageLevel": "Functional"
+    },
+    {
+      "Location": "Turret",
+      "CurrentArmor": 45,
+      "CurrentInternalStructure": 15,
+      "AssignedArmor": 45,
+      "DamageLevel": "Functional"
+    }
+  ],
+  "inventory": [
+    {
+      "MountedLocation": "Turret",
+      "ComponentDefID": "Weapon_MML_5",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Turret",
+      "ComponentDefID": "Weapon_MML_5",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "Ammo_AmmunitionBox_AX_LRM",
+      "ComponentDefType": "AmmunitionBox",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "Ammo_AmmunitionBox_Acid_SRM",
+      "ComponentDefType": "AmmunitionBox",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Front",
+      "ComponentDefID": "Gear_Pirate_ECM",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Front",
+      "ComponentDefID": "Tank_CrewCompartment",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Front",
+      "ComponentDefID": "Tank_FCS_Generic_2",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Left",
+      "ComponentDefID": "Gear_Hover_Left",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Right",
+      "ComponentDefID": "Gear_Hover_Right",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "Gear_Hover_Gearbox",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "Special_Nimble",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "emod_armorslots_ferrosfibrous",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "emod_structureslots_standard",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Turret",
+      "ComponentDefID": "Tank_Turret",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "Gear_Engine_170",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "Tank_Coolant_System",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "MountedLocation": "Rear",
+      "ComponentDefID": "emod_engineslots_FuelCell",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    }
+  ]
+}

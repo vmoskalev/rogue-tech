@@ -1,0 +1,105 @@
+{
+  "Description": {
+    "Id": "turretdef_union_1P",
+    "Name": "Union Dropship",
+    "Details": "Fortress installation safeguarding the surrounding area.\n\n<color=#ffcc00><b>Armor:</b> Armor <b>Amount:</b> 2000\n<b>Structure:</b> Structure <b>Amount:</b> 1000\n\n\n<b>Engine:</b> 0 Standard Fusion\n\n<b>Equipment:</b>\n\n\n<b>Weapons:</b>\n  5x ER Large Laser\n  5x ER PPC\n\n\n<b>Ammunition:</b>\n",
+    "Icon": "",
+    "Cost": 993,
+    "Rarity": 0,
+    "Purchasable": false
+  },
+  "ChassisID": "turretchassisdef_union_1P",
+  "TurretTags": {
+    "items": [
+      "BLACKLISTED",
+      "mr-resize-0.75"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "CurrentArmor": 2000,
+  "CurrentInternalStructure": 1000,
+  "AssignedArmor": 4500,
+  "DamageLevel": "Functional",
+  "inventory": [
+    {
+      "ComponentDefID": "Weapon_Laser_LargeLaserER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_Laser_LargeLaserER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_PPC_PPCER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_PPC_PPCER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_PPC_PPCER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_PPC_PPCER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_PPC_PPCER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_Laser_LargeLaserER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_Laser_LargeLaserER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_Laser_LargeLaserER_0-STOCK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    }
+  ]
+}
