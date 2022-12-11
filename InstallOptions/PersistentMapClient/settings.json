@@ -1,0 +1,112 @@
+{
+	"debug" : true,
+	"trace" : true,
+	"ServerURL" : "https://161.97.74.91:16001/",
+	"allowSelfSignedCert" : true,
+	"priorityContactPayPercentage": 1.5,
+	"priorityContractsPerAlly": 2,
+	"Season": "Charikov01",
+	"percentageToFlipEmployer": 0.25,
+	"percentageTravelContracts": 0.3,
+	"eventMarkers" : [
+	  {
+		"type" : "OnlineEvent",
+		"marker": {
+		  "useHmAnimation": true,
+		  "flashpointPrefix": "",
+		  "swapColour": true,
+		  "keepAlpha": true,
+		  "useOnlyInner": true,
+		  "autoDetectContracts": false,
+		  "useContractColourOverride": false,
+		  "innerCircle": {
+			"Colour": "#8904B1"
+		  }
+		}
+	  },
+	  {
+		"type" : "InsurrectSystem",
+		"marker": {
+		  "useHmAnimation": false,
+		  "flashpointPrefix": "",
+		  "swapColour": true,
+		  "keepAlpha": true,
+		  "useOnlyInner": true,
+		  "autoDetectContracts": false,
+		  "useContractColourOverride": false,
+		  "innerCircle": {
+			"Colour": "#AD0C0C"
+		  }
+		}
+	  },
+	  {
+		"type" : "HoldTheLineEvent",
+		"marker": {
+		  "useHmAnimation": true,
+		  "flashpointPrefix": "",
+		  "swapColour": true,
+		  "keepAlpha": true,
+		  "useOnlyInner": true,
+		  "autoDetectContracts": false,
+		  "useContractColourOverride": false,
+		  "innerCircle": {
+			"Colour": "#2106CC"
+		  }
+		}
+	  },
+	  {
+		"type" : "MercTarget",
+		"marker": {
+		  "useHmAnimation": false,
+		  "flashpointPrefix": "",
+		  "swapColour": true,
+		  "keepAlpha": true,
+		  "useOnlyInner": true,
+		  "autoDetectContracts": false,
+		  "useContractColourOverride": false,
+		  "innerCircle": {
+			"Colour": "#0CAC0C"
+		  }
+		}
+	  },
+	  {
+		"type" : "PriorityMercTarget",
+		"marker": {
+		  "useHmAnimation": false,
+		  "flashpointPrefix": "",
+		  "swapColour": true,
+		  "keepAlpha": true,
+		  "useOnlyInner": false,
+		  "autoDetectContracts": false,
+		  "useContractColourOverride": false,
+		  "innerCircle": {
+			"Colour": "#0CAC0C"
+		  },
+		  "outerCircle": {
+			"Colour": "#0099ff"
+		  },
+		  "outerPulsing": {
+			"Colour": "#0CAC0C"
+		  },
+		  "outerPulsingFill": {
+			"Colour": "#00ffff"
+		  }
+		}
+	  },
+	  {
+		"type" : "EventMercTarget",
+		"marker": {
+		  "useHmAnimation": true,
+		  "flashpointPrefix": "",
+		  "swapColour": true,
+		  "keepAlpha": true,
+		  "useOnlyInner": true,
+		  "autoDetectContracts": false,
+		  "useContractColourOverride": false,
+		  "innerCircle": {
+			"Colour": "#ff0066"
+		  }
+		}
+	  }
+	]
+  }

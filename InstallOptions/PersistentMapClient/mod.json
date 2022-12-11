@@ -1,0 +1,15 @@
+{
+    "Name": "PersistentMapClient",
+    "Enabled": true,
+
+    "Version": "5.0.0",
+    "Description": "RogueTech Online war map",
+    "Author": "Jamie Wolf",
+    "Website": "",
+    "Contact": "",
+	"Settings": {},
+	"DependsOn": [ "InnerSphereMap", "ColourfulFlashPoints","CustomShops"],
+	"DLL": "PersistentMapClient.dll",
+	"ConflictsWith": [ "Galaxy at War", "WarTech" ],
+	"IgnoreLoadFailure": true
+}
