@@ -2,7 +2,7 @@
   "Description": {
     "Id": "AbilityG5FocusFire",
     "Name": "FOCUS FIRE",
-    "Details": "PASSIVE: +6% Called Shot Multiplier. -1 Recoil.",
+    "Details": "PASSIVE: +10% Called Shot Multiplier. -1 Recoil. -10% Jam Chance Multiplier.",
     "Icon": "focusfire"
   },
   "DisplayParams": "ShowInMWTRay",
@@ -46,6 +46,30 @@
       },
       "effectType": "StatisticEffect",
       "Description": {
+        "Id": "ControlledBurstJamMitigation",
+        "Name": "Improved Called Shot",
+        "Details": "Called Shots twice as reliable",
+        "Icon": "uixSvgIcon_ability_mastertactician"
+      },
+      "statisticData": {
+        "statName": "CACModJammingChance",
+        "operation": "Float_Multiply",
+        "modValue": "0.9",
+        "modType": "System.Single",
+        "targetCollection": "Weapon"
+      }
+    },
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator"
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
         "Id": "BanditCalledShot",
         "Name": "Improved Called Shot",
         "Details": "Called Shots twice as reliable",
@@ -54,7 +78,7 @@
       "statisticData": {
         "statName": "CalledShotBonusMultiplier",
         "operation": "Float_Multiply",
-        "modValue": "1.06",
+        "modValue": "1.1",
         "modType": "System.Single"
       }
     }

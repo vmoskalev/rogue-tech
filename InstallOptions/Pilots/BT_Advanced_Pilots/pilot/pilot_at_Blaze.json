@@ -19,7 +19,7 @@
   "BonusGuts": 0,
   "BaseTactics": "3",
   "BonusTactics": 0,
-  "ExperienceUnspent": 4000,
+  "ExperienceUnspent": 10000,
   "ExperienceSpent": 2000,
   "Injuries": 0,
   "Health": 3,
@@ -31,12 +31,21 @@
   "AIPersonality": "Undefined",
   "PilotTags": {
     "items": [
+      "name_Blaze",
+      "pilot_magistracy",
+      "pilot_eiMaster",
+      "pilot_painshunt",
+      "pilot_NeuralImplants",
+      "pilot_salvageSeeker",
+      "pilot_tooOldForThis",
+      "pilot_clanAscended",
+      "pilot_tech",
+      "pilot_assassin",
+      "pilot_spacer",
+      "pilot_lucky",
       "pilot_military",
       "pilot_mechwarrior",
-      "pilot_reckless",
-      "pilot_honest",
-      "name_Blaze",
-      "pilot_magistracy"
+      "pilot_honest"
     ],
     "tagSetSourceFile": ""
   },

@@ -2,7 +2,7 @@
   "Description": {
     "Id": "AbilityP5Awareness",
     "Name": "AWARENESS",
-    "Details": "PASSIVE: Evasive Pips are Immune to Sensor Lock. +1 Initiative",
+    "Details": "PASSIVE: Evasive Pips are Immune to Sensor Lock. +1 Initiative. +2 Max Evasive. -10% Visibility.",
     "Icon": "awareness"
   },
   "DisplayParams": "ShowInMWTRay",
@@ -65,6 +65,54 @@
         "modValue": "1",
         "modType": "System.Int32"
       }
+    },
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator"
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "MaxEvasion",
+        "Name": "EVASIVE MOVE",
+        "Details": "This unit generates an extra EVASIVE charge from movement actions (up to its maximum).",
+        "Icon": "uixSvgIcon_action_evasivemove"
+      },
+      "statisticData": {
+        "statName": "MaxEvasivePips",
+        "operation": "Int_Add",
+        "modValue": "2",
+        "modType": "System.Int32"
+      },
+      "nature": "Buff"
+    },
+    {
+      "durationData": {
+        "duration": -1,
+        "stackLimit": -1
+      },
+      "targetingData": {
+        "effectTriggerType": "Passive",
+        "effectTargetType": "Creator"
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "AbilityDefP83",
+        "Name": "EVASIVE MOVE",
+        "Details": "",
+        "Icon": "uixSvgIcon_action_evasivemove"
+      },
+      "statisticData": {
+        "statName": "SpottingVisibilityMultiplier",
+        "operation": "Float_Multiply",
+        "modValue": "0.9",
+        "modType": "System.Single"
+      },
+      "nature": "Buff"
     }
   ],
   "IsPrimaryAbility": true

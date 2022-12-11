@@ -67,7 +67,68 @@
         "valueConstant": ""
       }
     ],
-    "Actions": null,
+    "Actions": [
+			{
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_at_Blaze",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+			{
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_at_Crash",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+			{
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_backer_Reinke",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+			{
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_backer_Leone",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+      {
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_ronin_Wildfire",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+      {
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_at_LeFay",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+      {
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_at_Mongrel",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+      {
+				"Type": "MechWarrior_AddRoster",
+				"value": "pilot_backer_Gibbs",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+			{
+				"Type": "System_ShowRewards",
+				"value": "itemcollection_background_corsair",
+				"valueConstant": null,
+				"additionalValues": null
+			},
+			{
+				"Type": "System_ShowRewards",
+				"value": "itemcollection_background_hatchetman",
+				"valueConstant": null,
+				"additionalValues": null
+			}
+		],
     "ForceEvents": [
       {
         "Scope": "Company",
