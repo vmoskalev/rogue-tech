@@ -1,0 +1,172 @@
+{
+  "Description": {
+    "Id": "turretdef_Light_SSRM2",
+    "Name": "Light Streak Turret",
+    "Details": "A basic weapon emplacement providing rudimentary defenses.\n\n<color=#ff0000>Quirk: Stable Weapons</color>\n\n<color=#ffcc00><b>Armor:</b> Armor <b>Amount:</b> 160\n<b>Structure:</b> Structure <b>Amount:</b> 100\n\n\n<b>Engine:</b> 100 Standard Fusion\n\n<b>Equipment:</b>\n  1 x Command Bunker\n\n\n<b>Weapons:</b>\n  6x SRM2 Streak\n\n\n<b>Ammunition:</b>\n  1x Ammo Streak SRM\n",
+    "Icon": "",
+    "Cost": 993,
+    "Rarity": 0,
+    "Purchasable": false
+  },
+  "ChassisID": "turretchassisdef_Light_SSRM2",
+  "TurretTags": {
+    "items": [
+      "unit_turret",
+      "unit_light",
+      "republic",
+      "comstar",
+      "wordofblake",
+      "FiltveltCoalition",
+      "Rim",
+      "steiner",
+      "marik",
+      "kurita",
+      "davion",
+      "liao",
+      "magistracyofcanopus",
+      "marian",
+      "taurianconcordat",
+      "CalderonProtectorate",
+      "MarikStewart",
+      "RegulanFiefs",
+      "TamarindAbbey",
+      "DuchyOfAndurien",
+      "OrienteProtectorate",
+      "RimCommonality",
+      "FroncReaches",
+      "EscorpionImperio",
+      "ClanWolfInExile",
+      "GreenGhosts",
+      "rasalhague",
+      "outworld",
+      "ives",
+      "tortuga",
+      "auriganpirates",
+      "aurigandirectorate",
+      "auriganrestoration",
+      "locals",
+      "clansgeneric",
+      "clanbloodspirit",
+      "clanwolf",
+      "clanfiremandrill",
+      "clanstaradder",
+      "clancoyote",
+      "clanjadefalcon",
+      "clansteelviper",
+      "clanicehellion",
+      "clangoliathscorpion",
+      "clandiamondshark",
+      "clanhellshorses",
+      "clansnowraven",
+      "clanghostbear",
+      "clansmokejaguar",
+      "clancloudcobra",
+      "clannovacat",
+      "clanburrock",
+      "GhostBearDominion",
+      "ClanStoneLion",
+      "RavenAlliance",
+      "society",
+      "DarkCaste",
+      "solaris7",
+      "mr-resize-0.75"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "CurrentArmor": 160,
+  "CurrentInternalStructure": 100,
+  "AssignedArmor": 160,
+  "DamageLevel": "Functional",
+  "inventory": [
+    {
+      "ComponentDefID": "Weapon_SRM_SRM2_STREAK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_SRM_SRM2_STREAK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 1,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_SRM_SRM2_STREAK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_SRM_SRM2_STREAK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_SRM_SRM2_STREAK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 4,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Weapon_SRM_SRM2_STREAK",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 5,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_apc_turret_generic_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "ComponentDefID": "Ammo_AmmunitionBox_Streak_SRM",
+      "ComponentDefType": "AmmunitionBox",
+      "HardpointSlot": -1,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Gear_Engine_100",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Turret_Coolant_System",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "emod_engineslots_std_center",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Tank_CrewBunker_Light",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Turret_Systems_Light",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    },
+    {
+      "ComponentDefID": "Special_Stable_Weapons",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": 2,
+      "DamageLevel": "Functional"
+    }
+  ]
+}
