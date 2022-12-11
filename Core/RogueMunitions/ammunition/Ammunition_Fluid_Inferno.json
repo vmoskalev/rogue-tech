@@ -1,0 +1,54 @@
+{
+  "Description": {
+    "Id": "Ammunition_Fluid_Inferno",
+    "Name": "Inferno Fluid Ammo",
+    "UIName": "Inferno",
+    "Details": "",
+    "Icon": null,
+    "Cost": 0,
+    "Rarity": 0,
+    "Purchasable": false
+  },
+  "Type": "Normal",
+  "Category": "Fluid",
+  "HeatGenerated": 0,
+  "AIBattleValue": 70,
+  "HeatGeneratedModifier": 1,
+  "ArmorDamageModifier": 1,
+  "ISDamageModifier": 1,
+  "CriticalDamageModifier": 1,
+  "DamagePerShot": 8,
+  "HeatDamagePerShot": 10,
+  "FireTerrainChance": 1,
+  "FireOnSuccessHit": true,
+  "statusEffects": [
+    {
+      "durationData": {
+        "duration": 3,
+        "ticksOnActivations": true,
+        "useActivationsOfTarget": true,
+        "stackLimit": 2
+      },
+      "targetingData": {
+        "effectTriggerType": "OnHit",
+        "extendDurationOnTrigger": 2,
+        "showInTargetPreview": true,
+        "showInStatusPanel": true
+      },
+      "effectType": "StatisticEffect",
+      "Description": {
+        "Id": "Effect_InfernoHeat",
+        "Name": "INFERNO",
+        "Details": "This unit is coated with burning chemicals. It will gain 15 heat on its next activation.",
+        "Icon": "uixSvgIcon_biome_Heated"
+      },
+      "statisticData": {
+        "statName": "HeatSinkCapacity",
+        "operation": "Int_Add",
+        "modValue": "-15",
+        "modType": "System.Int32"
+      },
+      "nature": "Debuff"
+    }
+  ]
+}
