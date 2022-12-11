@@ -2,7 +2,7 @@
   "id": "pilotQuirkDef_pilot_assassin",
   "tag": "pilot_assassin",
   "quirkName": "Assassin",
-  "description": "+10% Called Shot. +3 OP Accuracy. +15% Upkeep",
+  "description": "+25% Called Shot. +3 OP Accuracy. +15% Upkeep",
   "effectData": [
     {
       "durationData": {
@@ -32,7 +32,7 @@
       "statisticData": {
         "statName": "CalledShotBonusMultiplier",
         "operation": "Float_Multiply",
-        "modValue": "1.1",
+        "modValue": "1.25",
         "modType": "System.Single"
       }
     }

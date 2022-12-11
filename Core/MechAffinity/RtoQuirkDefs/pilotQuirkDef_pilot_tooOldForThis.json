@@ -2,7 +2,7 @@
   "id": "pilotQuirkDef_pilot_tooOldForThis",
   "tag": "pilot_tooOldForThis",
   "quirkName": "Too Old For This Shit",
-  "description": "Head Shots Enabled. +4 OP accuracy. 35% Pilot Upkeep.",
+  "description": "Head Shots Enabled. +4 OP accuracy.",
   "effectData": [
     {
       "durationData": {
@@ -54,7 +54,7 @@
   "quirkEffects": [
     {
       "type": "PilotCostFactor",
-      "modifier": 0.35,
+      "modifier": 0.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     }

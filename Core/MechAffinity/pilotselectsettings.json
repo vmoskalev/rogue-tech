@@ -1,7 +1,7 @@
 {
-  "RoninFromList": 0,
+  "RoninFromList": 2,
   "ProceduralPilots": 0,
-  "RandomRonin": 7,
-  "PossibleStartingRonin": [],
+  "RandomRonin": 0,
+  "PossibleStartingRonin": ["pilot_at_Geezer","pilot_at_Face"],
 }
 
