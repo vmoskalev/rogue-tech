@@ -37,19 +37,9 @@
       "pilot_naive",
       "pilot_steiner",
       "pilot_vehicle_crew",
-      "pilot_eiMaster",
+      "pilot_avengersMember",
       "pilot_painshunt",
-      "pilot_NeuralImplants",
-      "pilot_salvageSeeker",
-      "pilot_tooOldForThis",
-      "pilot_clanAscended",
-      "pilot_tech",
-      "pilot_assassin",
-      "pilot_spacer",
-      "pilot_lucky",
-      "pilot_military",
-      "pilot_mechwarrior",
-      "pilot_honest"
+      "pilot_NeuralImplants"
     ],
     "tagSetSourceFile": ""
   },

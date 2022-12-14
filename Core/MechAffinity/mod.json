@@ -31,6 +31,10 @@
 		},
 		{
 			"Type": "QuirkDef",
+			"Path": "AvengersQuirkDefs"
+		},
+		{
+			"Type": "QuirkDef",
 			"Path": "RtoSharedQuirkDefs"
 		},
 		{
