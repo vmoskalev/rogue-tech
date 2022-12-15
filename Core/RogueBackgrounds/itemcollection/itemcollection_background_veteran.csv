@@ -1,5 +1,6 @@
 itemcollection_background_veteran,,,
-mechdef_quasimodo_QSM-RSC,Mech,1,1
+mechdef_urbanmech_UM-RISC-III,Mech,2,1
+mechdef_urbanmech_UM-RISC-IV,Mech,2,1
 mechdef_bushwacker_BSW-X6,Mech,1,1
 vehicledef_Ferret_RISC,Mech,1,1
 vehicledef_Cascatelle_RAC5,Mech,1,1

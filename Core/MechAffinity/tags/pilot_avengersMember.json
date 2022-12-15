@@ -1,7 +1,7 @@
 {
-  "Name": "pilot_avengersLeader",
+  "Name": "pilot_avengersMember",
   "Important": false,
   "PlayerVisible": true,
-  "FriendlyName": "Avengers Leader",
-  "Description": "This pilot is leader of avengers team."
+  "FriendlyName": "Avengers Member",
+  "Description": "This pilot is member of avengers team."
 }

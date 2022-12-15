@@ -280,7 +280,7 @@
     },
     {
       "type": "PilotHealth",
-      "modifier": 1.0,
+      "modifier": 2.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     }

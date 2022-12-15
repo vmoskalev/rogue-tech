@@ -19,7 +19,7 @@
   "BonusGuts": 0,
   "BaseTactics": "3",
   "BonusTactics": 0,
-  "ExperienceUnspent": 3125,
+  "ExperienceUnspent": 9999,
   "ExperienceSpent": 300,
   "Injuries": 0,
   "Health": 3,
@@ -35,10 +35,11 @@
       "BLACKLISTED",
       "name_Varangian",
       "pilot_tech",
-      "pilot_command",
-      "pilot_mechwarrior",
       "pilot_kurita",
-      "pilot_vehicle_crew"
+      "pilot_vehicle_crew",
+      "pilot_avengersMember",
+      "pilot_painshunt",
+      "pilot_NeuralImplants"
     ],
     "tagSetSourceFile": ""
   },

@@ -57,7 +57,7 @@
 			},
 			{
 				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_at_Crash",
+				"value": "pilot_backer_Slipais",
 				"valueConstant": null,
 				"additionalValues": null
 			},
@@ -87,13 +87,13 @@
 			},
       {
 				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_at_Mongrel",
+				"value": "pilot_backer_Shvartz",
 				"valueConstant": null,
 				"additionalValues": null
 			},
       {
 				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_backer_Gibbs",
+				"value": "pilot_backer_Nick",
 				"valueConstant": null,
 				"additionalValues": null
 			},
@@ -105,13 +105,13 @@
 			},
       {
 				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_ronin_Mockingbird",
+				"value": "pilot_backer_FalkM",
 				"valueConstant": null,
 				"additionalValues": null
 			},
       {
 				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_backer_Keane",
+				"value": "pilot_backer_Hardie",
 				"valueConstant": null,
 				"additionalValues": null
 			}
