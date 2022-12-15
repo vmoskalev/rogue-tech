@@ -2,7 +2,7 @@
   "id": "pilotQuirkDef_pilot_avengersLeader",
   "tag": "pilot_avengersLeader",
   "quirkName": "Avengers Leader",
-  "description": "Ace pilot always enabled. Head Shots Enabled. -15% Jam Chance Multi. +33% Called Shot. +9 OP accuracy. -4 Recoil. +3 Evasion Gained & Max. +3 Defense. +3 Walk Move Point. +5 Random Salvage.",
+  "description": "Ace pilot always enabled. Head Shots Enabled. -15% Jam Chance Multi. +33% Called Shot. +9 OP accuracy. -4 Recoil. +3 Evasion Gained & Max. +3 Defense. +3 Walk Move Point. +3 Random Salvage.",
   "effectData": [
     {
       "durationData": {
@@ -262,7 +262,7 @@
   "quirkEffects": [
     {
       "type": "AdditionalSalvage",
-      "modifier": 5,
+      "modifier": 3,
       "secondaryModifier": 0,
       "affectedIds": []
     },
@@ -274,19 +274,19 @@
     },
     {
       "type": "MechTech",
-      "modifier": 3.0,
+      "modifier": 2.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     },
     {
       "type": "Morale",
-      "modifier": 3.0,
+      "modifier": 2.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     },
     {
       "type": "PilotHealth",
-      "modifier": 3.0,
+      "modifier": 2.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     }

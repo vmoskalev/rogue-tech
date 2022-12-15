@@ -274,19 +274,13 @@
     },
     {
       "type": "MechTech",
-      "modifier": 2.0,
-      "secondaryModifier": 0.0,
-      "affectedIds": []
-    },
-    {
-      "type": "Morale",
-      "modifier": 2.0,
+      "modifier": 1.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     },
     {
       "type": "PilotHealth",
-      "modifier": 2.0,
+      "modifier": 1.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     }

@@ -1,2 +1,7 @@
 itemcollection_background_veteran,,,
-itemcollection_random_bushwacker,Reference,1,10
+mechdef_quasimodo_QSM-RSC,Mech,1,1
+mechdef_bushwacker_BSW-X6,Mech,1,1
+vehicledef_Ferret_RISC,Mech,1,1
+vehicledef_Cascatelle_RAC5,Mech,1,1
+vehicledef_Mantis_RISC,Mech,3,1
+itemCollection_Mechs_Starting_Tanks_VTOL,Reference,5,10
