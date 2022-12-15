@@ -1,8 +1,4 @@
 itemcollection_background_veteran,,,
 mechdef_urbanmech_UM-RISC-III,Mech,2,1
 mechdef_urbanmech_UM-RISC-IV,Mech,2,1
-mechdef_bushwacker_BSW-X6,Mech,1,1
-vehicledef_Ferret_RISC,Mech,1,1
-vehicledef_Cascatelle_RAC5,Mech,1,1
-vehicledef_Mantis_RISC,Mech,3,1
-itemCollection_Mechs_Starting_Tanks_VTOL,Reference,5,10
+vehicledef_Mantis_RISC,Mech,4,1
