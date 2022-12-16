@@ -2,7 +2,7 @@
   "id": "pilotQuirkDef_pilot_avengersMember",
   "tag": "pilot_avengersMember",
   "quirkName": "Avengers Member",
-  "description": "Ace pilot always enabled. Head Shots Enabled. -15% Jam Chance Multi. +33% Called Shot. +7 OP accuracy. -3 Recoil. +2 Evasion Gained & Max. +2 Defense. +2 Walk Move Point. +3 Random Salvage.",
+  "description": "Ace pilot always enabled. Head Shots Enabled. -33% Jam Chance Multi. +33% Called Shot. +9 OP accuracy. -3 Recoil. +2 Evasion Gained & Max. +2 Defense. +2 Walk Move Point. +3 Random Salvage.",
   "effectData": [
     {
       "durationData": {
@@ -23,7 +23,7 @@
       "statisticData": {
         "statName": "CACModJammingChance",
         "operation": "Float_Multiply",
-        "modValue": "0.85",
+        "modValue": "0.67",
         "modType": "System.Single",
         "targetCollection": "Weapon"
       }
@@ -151,7 +151,7 @@
       "statisticData": {
         "statName": "IRTCalledShotMod",
         "operation": "Int_Add",
-        "modValue": "-7",
+        "modValue": "-9",
         "modType": "System.Int32"
       },
       "nature": "Buff"
@@ -274,7 +274,7 @@
     },
     {
       "type": "MechTech",
-      "modifier": 1.0,
+      "modifier": 2.0,
       "secondaryModifier": 0.0,
       "affectedIds": []
     },
