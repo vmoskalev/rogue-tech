@@ -1,4 +1,2 @@
 itemcollection_background_veteran,,,
-mechdef_urbanmech_UM-RISC-III,Mech,2,1
-mechdef_urbanmech_UM-RISC-IV,Mech,2,1
-vehicledef_Mantis_RISC,Mech,4,1
+itemcollection_random_bushwacker,Reference,1,10
