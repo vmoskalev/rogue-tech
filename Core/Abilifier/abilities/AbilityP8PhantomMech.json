@@ -2,15 +2,13 @@
   "Description": {
     "Id": "AbilityP8PhantomMech",
     "Name": "PHANTOM",
-    "Details": "PASSIVE: Gain +2 Local ECM and -50% Visibility/SensorSignature.",
+    "Details": "PASSIVE: Gain +1 Local ECM and -10% Visibility/SensorSignature.",
     "Icon": "phantommech"
   },
   "DisplayParams": "ShowInMWTRay",
   "ReqSkill": "Piloting",
   "ReqSkillLevel": 8,
-  "ActivationTime": "ConsumedByFiring",
-  "ActivationCooldown": 3,
-  "Targeting": "ActorSelf",
+  "ActivationTime": "Passive",
   "EffectData": [
     {
       "durationData": {
@@ -31,7 +29,7 @@
       "statisticData": {
         "statName": "LV_ECM_SHIELD",
         "operation": "Int_Add",
-        "modValue": "2",
+        "modValue": "1",
         "modType": "System.Int32"
       },
       "nature": "Buff"
@@ -60,7 +58,7 @@
       "statisticData": {
         "statName": "SensorSignatureModifier",
         "operation": "Float_Multiply",
-        "modValue": "0.5",
+        "modValue": "0.9",
         "modType": "System.Single"
       },
       "nature": "Buff"
