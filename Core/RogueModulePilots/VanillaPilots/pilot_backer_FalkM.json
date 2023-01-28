@@ -19,7 +19,7 @@
   "BonusGuts": 0,
   "BaseTactics": "3",
   "BonusTactics": 0,
-  "ExperienceUnspent": 9999,
+  "ExperienceUnspent": 3250,
   "ExperienceSpent": 300,
   "Injuries": 0,
   "Health": 3,
@@ -35,11 +35,11 @@
       "BLACKLISTED",
       "name_Gearhead",
       "pilot_tech",
+      "pilot_military",
+      "pilot_criminal",
+      "pilot_gladiator",
       "pilot_periphery",
-      "pilot_vehicle_crew",
-      "pilot_avengersMember",
-      "pilot_painshunt",
-      "pilot_NeuralImplants"
+      "pilot_vehicle_crew"
     ],
     "tagSetSourceFile": ""
   },

@@ -19,7 +19,7 @@
   "BonusGuts": 0,
   "BaseTactics": "3",
   "BonusTactics": 0,
-  "ExperienceUnspent": 10000,
+  "ExperienceUnspent": 3250,
   "ExperienceSpent": 300,
   "Injuries": 0,
   "Health": 3,
@@ -35,11 +35,11 @@
       "BLACKLISTED",
       "name_Munin",
       "pilot_noble",
+      "pilot_military",
+      "pilot_mechwarrior",
+      "pilot_criminal",
       "pilot_kurita",
-      "pilot_vehicle_crew",
-      "pilot_avengersMember",
-      "pilot_painshunt",
-      "pilot_NeuralImplants"
+      "pilot_vehicle_crew"
     ],
     "tagSetSourceFile": ""
   },

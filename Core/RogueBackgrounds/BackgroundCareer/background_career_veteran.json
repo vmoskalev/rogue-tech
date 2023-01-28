@@ -67,12 +67,6 @@
 				"valueConstant": null,
 				"additionalValues": null
 			},
-			{
-				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_backer_Leone",
-				"valueConstant": null,
-				"additionalValues": null
-			},
       {
 				"Type": "MechWarrior_AddRoster",
 				"value": "pilot_ronin_Wildfire",
@@ -81,37 +75,7 @@
 			},
       {
 				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_at_LeFay",
-				"valueConstant": null,
-				"additionalValues": null
-			},
-      {
-				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_backer_Shvartz",
-				"valueConstant": null,
-				"additionalValues": null
-			},
-      {
-				"Type": "MechWarrior_AddRoster",
 				"value": "pilot_backer_Nick",
-				"valueConstant": null,
-				"additionalValues": null
-			},
-      {
-				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_ronin_Showboat",
-				"valueConstant": null,
-				"additionalValues": null
-			},
-      {
-				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_backer_FalkM",
-				"valueConstant": null,
-				"additionalValues": null
-			},
-      {
-				"Type": "MechWarrior_AddRoster",
-				"value": "pilot_backer_Hardie",
 				"valueConstant": null,
 				"additionalValues": null
 			}
