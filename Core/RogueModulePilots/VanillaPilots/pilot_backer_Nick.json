@@ -31,11 +31,13 @@
   "AIPersonality": "Undefined",
   "PilotTags": {
     "items": [
+      "pilot_mercenary",
+      "pilot_painshunt",
+      "pilot_NeuralImplants",
       "pilot_backer",
       "BLACKLISTED",
       "name_Corsair",
       "pilot_military",
-      "pilot_criminal",
       "pilot_spacer",
       "pilot_lucky",
       "pilot_mechwarrior",

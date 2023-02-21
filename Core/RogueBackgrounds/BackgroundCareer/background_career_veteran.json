@@ -13,6 +13,9 @@
     "Requirements": null,
     "AddedTags": {
       "items": [
+        "pilot_mercenary",
+        "pilot_painshunt",
+        "pilot_NeuralImplants",
         "pilot_military",
         "pilot_lucky"
       ],
@@ -45,7 +48,50 @@
         "valueConstant": ""
       }
     ],
-    "Actions": null,
+    "Actions": [
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_at_Blaze",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_backer_Slipais",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_backer_Reinke",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_ronin_Wildfire",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_backer_Piazza",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_ronin_Showboat",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_backer_Nick",
+        "valueConstant": null,
+        "additionalValues": null
+      }
+    ],
     "ForceEvents": [
       {
         "Scope": "Company",

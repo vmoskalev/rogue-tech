@@ -31,12 +31,13 @@
   "AIPersonality": "Undefined",
   "PilotTags": {
     "items": [
+      "pilot_mercenary",
+      "pilot_painshunt",
+      "pilot_NeuralImplants",
       "BLACKLISTED",
       "name_Showboat",
       "pilot_military",
       "pilot_mechwarrior",
-      "pilot_drunk",
-      "pilot_gladiator",
       "pilot_brave",
       "pilot_periphery",
       "pilot_vehicle_crew"

@@ -31,6 +31,9 @@
   "AIPersonality": "Undefined",
   "PilotTags": {
     "items": [
+      "pilot_mercenary",
+      "pilot_painshunt",
+      "pilot_NeuralImplants",
       "BLACKLISTED",
       "name_Wildfire",
       "pilot_military",

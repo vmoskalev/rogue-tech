@@ -31,12 +31,14 @@
   "AIPersonality": "Undefined",
   "PilotTags": {
     "items": [
+      "pilot_mercenary",
+      "pilot_painshunt",
+      "pilot_NeuralImplants",
       "pilot_backer",
       "BLACKLISTED",
       "name_Adrenaline",
       "pilot_military",
       "pilot_command",
-      "pilot_gladiator",
       "pilot_davion",
       "pilot_vehicle_crew"
     ],
