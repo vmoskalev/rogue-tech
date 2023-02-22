@@ -45,7 +45,50 @@
         "valueConstant": ""
       }
     ],
-    "Actions": null,
+    "Actions": [
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_sim_starter_dekker",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_at_Crash",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_backer_Hurtado",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_backer_Alaniz",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_at_Mustang",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_ronin_Showboat",
+        "valueConstant": null,
+        "additionalValues": null
+      },
+      {
+        "Type": "MechWarrior_AddRoster",
+        "value": "pilot_backer_Huxley",
+        "valueConstant": null,
+        "additionalValues": null
+      }
+    ],
     "ForceEvents": [
       {
         "Scope": "Company",
