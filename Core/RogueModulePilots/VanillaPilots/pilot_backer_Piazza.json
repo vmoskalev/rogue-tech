@@ -31,9 +31,6 @@
   "AIPersonality": "Undefined",
   "PilotTags": {
     "items": [
-      "pilot_mercenary",
-      "pilot_painshunt",
-      "pilot_NeuralImplants",
       "pilot_backer",
       "BLACKLISTED",
       "name_Rook",
